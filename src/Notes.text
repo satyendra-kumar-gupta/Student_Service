@@ -1,0 +1,17 @@
+There is 2 way to communicate to database
+1- EntityManager - we have manually setup
+2- JpaRepository - internally communicates to Entity-manager
+
+H2 database open http://localhost:8080/h2-console
+
+
+// For one to many
+insert into student(id,student_name,age) values (1,'ABC',10);
+insert into student(id,student_name,age) values (2,'PQR',20);
+insert into student(id,student_name,age) values (3,'XYZ',30);
+insert into Book values (101,'java',2);
+insert into Book values (102,'c++',2);
+insert into Book values (103,'c++',3);
+insert into Book values (104,'c',3);
+insert into Book values (105,'java',3);
+
